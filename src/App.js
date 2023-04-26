@@ -1,9 +1,15 @@
+import Home from "./component/Home";
+import Nav from "./component/Nav";
+import { TaskProvider } from "./context/TaskContext";
 
 function App() {
   return (
-    <div className="App">
-      <h1>My Todo-Task Manager</h1>
-    </div>
+    <TaskProvider>
+      <div className="App">
+        <Nav/>
+        <Home />
+      </div>
+    </TaskProvider>
   );
 }
 
