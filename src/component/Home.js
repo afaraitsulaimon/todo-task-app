@@ -87,7 +87,7 @@ const Home = () => {
     } else {
       setTask((prevTasks) => [
         ...prevTasks,
-        { id: uuidv4, title: taskTitle, taskDetails: taskDetails, status: false },
+        { id: uuidv4(), title: taskTitle, taskDetails: taskDetails, status: false },
       ]);
       setError("");
       setTaskTitle("");
@@ -111,6 +111,7 @@ const Home = () => {
       setTask(
         tasks?.map((element) => {
           if (element.id === isEditItem) {
+            console.log(element.id)
             return {
               ...element,
               title: inputEditTitle,
