@@ -25,5 +25,36 @@ export const Container = styled.div`
     font-family: 'Comfortaa', cursive;
 
 }
+
+@media (max-width: 576px) {
+    width: 100%;
+   p{
+    font-size: 1em;
+   }
+}
+
+    @media (min-width: 577px) and (max-width: 768px){
+        width: 100%;
+
+        p{
+    font-size: 1em;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    width: 100%;
+
+    p{
+    font-size: 1em;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    width: 100%;
+
+    p{
+    font-size: 1em;
+   }
+}
 `;
 

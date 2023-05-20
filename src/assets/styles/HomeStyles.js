@@ -38,6 +38,9 @@ export const Container = styled.div`
         cursor: pointer;
         
     }
+
+    
+  
     .modalShowHolder .formHolder{
         width: 40%;
         height: 80%;
@@ -315,6 +318,71 @@ export const Container = styled.div`
       padding-left: 1em;
       font-size: 0.8em;
     }
+
+    @media (max-width: 576px) {
+  
+  .modalShowHolder .fatimesHolder .faTimes{
+      position: absolute;
+      top: -1.3em;
+      left: 45em;
+   
+      
+  }
+
+  .editModalShowHolder .fatimesHolder .faTimes{
+    position: absolute;
+      top: -1.3em;
+      left: 45em;
+        
+    }
+}
+
+  @media (min-width: 577px) and (max-width: 768px){
+  
+      .modalShowHolder .fatimesHolder .faTimes{
+          position: absolute;
+      top: -1.3em;
+      left: 45em;
+   
+  }
+
+  .editModalShowHolder .fatimesHolder .faTimes{
+    position: absolute;
+      top: -1.3em;
+      left: 45em;
+        
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+  .modalShowHolder .fatimesHolder .faTimes{
+      position: absolute;
+      top: -1.3em;
+      left: 45em;
+  }
+
+  .editModalShowHolder .fatimesHolder .faTimes{
+    position: absolute;
+      top: -1.3em;
+      left: 45em;
+        
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+
+  .modalShowHolder .fatimesHolder .faTimes{
+      position: absolute;
+      top: -1.3em;
+      left: 45em;
+  }
+  .editModalShowHolder .fatimesHolder .faTimes{
+    position: absolute;
+      top: -1.3em;
+      left: 45em;
+        
+    }
+}
 `;
 
 export const BoardHolder = styled.div`
@@ -327,6 +395,33 @@ export const BoardHolder = styled.div`
     h1{
         margin: 0;
     }
+
+    @media (max-width: 576px) {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+    @media (min-width: 577px) and (max-width: 768px){
+        width: 100%;
+        display: flex;
+   flex-direction: column;
+
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+
+}
 `;
 
 export const LeftSideBar = styled.div`
@@ -339,6 +434,25 @@ export const LeftSideBar = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+
+   @media (max-width: 576px) {
+   width: 100%;
+}
+
+    @media (min-width: 577px) and (max-width: 768px){
+        width: 100%;
+
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    width: 100%;
+
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    width: 100%;
+
+}
    
 `;
 
@@ -351,6 +465,8 @@ export const InnerLeftSideBar = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+
+   
 
    ul li{
     list-style: none;
@@ -389,7 +505,6 @@ export const InnerLeftSideBar = styled.div`
     border: none;
     border-radius: 5px;
     font-weight: bolder;
-
    
    }
 
@@ -399,6 +514,111 @@ export const InnerLeftSideBar = styled.div`
         border-radius: 5px;
         color: white;
    }
+
+   @media (max-width: 576px) {
+   display: flex;
+   flex-direction:row;
+
+   ul {
+     display: flex;
+   }
+
+   ul li button{
+    width:150px;
+
+ 
+   }
+
+   ul li{
+    list-style: none;
+    margin: 0.5em 0;
+   }
+}
+
+    @media (min-width: 577px) and (max-width: 768px){
+        display: flex;
+   flex-direction:row;
+   width: 100%;
+   height: 40%;
+   box-sizing: border-box;
+
+   ul {
+    margin: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     /* background-color: orange; */
+     height: 100%;
+     box-sizing: border-box;
+     width: 70%;
+     height: 100%;
+   }
+
+   ul li button{
+    width:145px;
+ 
+   }
+
+   ul li{
+    list-style: none;
+    /* margin: 0.5em 0; */
+   }
+
+   .logoutHolder {
+    display: flex;
+align-items: center;
+   }
+
+   .logoutHolder button{
+    height: 65%;
+    padding: 0 2.5em;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-right: 0.5em;
+   
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+
+   ul {
+     display: flex;
+   }
+
+   ul li button{
+    width:150px;
+
+   }
+
+   ul li{
+    list-style: none;
+    margin: 0.5em 0;
+   }
+
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    display: flex;
+   flex-direction:row;
+
+   ul {
+     display: flex;
+   }
+
+   ul li button{
+    width:150px;
+ 
+   }
+
+   ul li{
+    list-style: none;
+    margin: 0.5em 0;
+   }
+
+}
 `;
 
 export const RightSideBar = styled.div`
@@ -410,6 +630,29 @@ export const RightSideBar = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+
+   
+   @media (max-width: 576px) {
+  width: 100%;
+}
+
+    @media (min-width: 577px) and (max-width: 768px){
+      width: 100%;
+
+ 
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+   
+  width: 100%;
+
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+  
+  width: 100%;
+
+}
 `;
 
 
